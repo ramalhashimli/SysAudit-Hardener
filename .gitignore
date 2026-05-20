@@ -1,0 +1,17 @@
+# Generated audit logs and reports -- never commit these
+reports/*.log
+reports/*.txt
+reports/eventlogs/
+reports/evtexport_*/
+reports/robocopy_*.log
+
+# Keep the reports directory tracked but empty
+!reports/.gitkeep
+
+# Linux log output (written to /var/log/sysaudit/ on the target host)
+*.log
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
